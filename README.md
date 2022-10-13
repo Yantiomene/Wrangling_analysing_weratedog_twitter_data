@@ -7,7 +7,8 @@
 
 
 ### Dataset
-The dataset that we will be wrangling (and analyzing and visualizing) is the tweet archive of Twitter user _@dog_rates_, also known as [WeRateDogs](https://en.wikipedia.org/wiki/WeRateDogs). WeRateDogs is a Twitter account that rates people's dogs with a humorous comment about the dog. These ratings almost always have a denominator of 10. The numerators, though? Almost always greater than 10. 11/10, 12/10, 13/10, etc. Why? Because [_"they're good dogs Brent."_](https://knowyourmeme.com/memes/theyre-good-dogs-brent) WeRateDogs has over 4 million followers and has received international media coverage. The WeRateDogs [_Twitter archive_](https://help.twitter.com/fr/managing-your-account/how-to-download-your-twitter-archive)  contains basic tweet data (tweet ID, timestamp, text, etc.) for all 5000+ of their tweets as they stood on August 1, 2017. Additional data will be gathered from Twitter's API. These include:
+>The dataset that we will be wrangling (and analyzing and visualizing) is the tweet archive of Twitter user _@dog_rates_, also known as [WeRateDogs](https://en.wikipedia.org/wiki/WeRateDogs). WeRateDogs is a Twitter account that rates people's dogs with a humorous comment about the dog. These ratings almost always have a denominator of 10. The numerators, though? Almost always greater than 10. 11/10, 12/10, 13/10, etc. Why? Because [_"they're good dogs Brent."_](https://knowyourmeme.com/memes/theyre-good-dogs-brent) WeRateDogs has over 4 million followers and has received international media coverage. The WeRateDogs [_Twitter archive_](https://help.twitter.com/fr/managing-your-account/how-to-download-your-twitter-archive)  contains basic tweet data (tweet ID, timestamp, text, etc.) for all 5000+ of their tweets as they stood on August 1, 2017. Additional data will be gathered from Twitter's API. These include:
+
 1. The tweet image predictions file : every image in the WeRateDogs Twitter archive went through a neural network that can classify breeds of dogs. 
 2. tweet_json.txt file :Using the tweet IDs in the WeRateDogs Twitter archive, we query the Twitter API for each tweet's JSON data using Python's Tweepy library and store each tweet's entire set of JSON data in a file.
 
@@ -54,4 +55,4 @@ The dataset that we will be wrangling (and analyzing and visualizing) is the twe
 4. There is a positive but not high correlation between `rating` and `favorite_count`, then `rating` and `retweet_count`.
 
 5. The top 10 most used names in tweet are `Charlie`, `Cooper`, `Oliver`, `Tucker`, `Lucy`, `Penny`, `Winston`, `Sadie`, `Lola`, and `Toby`
-6. The most used source of tweet is `iPhone` with more than 98%
+6. The most used source of tweet is `iPhone` with more than 98% users
